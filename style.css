@@ -5,4 +5,19 @@ body{
 h1{
     color: brown;
     text-align: center;
-}
+
+    animation: go-back 2s infinite alternate;
+    
+  }
+  
+  @keyframes go-back {
+    0%{
+      transform: translate(50px);
+    }
+    50%{
+        transform: rotateX(-200px)      
+    }
+    100%{
+      transform: rotateX(300px);
+    }
+  }
